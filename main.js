@@ -17,7 +17,7 @@ let countDown = () => {
   let min = Math.floor(myDate / 1000 / 60) % 60;
   let sec = Math.floor(myDate / 1000) % 60;
 
-  if (days == 1 && hours == 9 && min == 55 && sec == 0) {
+  if (days <= 0 && hours <= 0 && min <= 0 && sec <= 0) {
     console.log(titleElement);
     body.style.backgroundImage = 'url("images/pic2.jpeg")';
     countdownDiv.style.display = "none";
